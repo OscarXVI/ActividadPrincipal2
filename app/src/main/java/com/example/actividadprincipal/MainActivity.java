@@ -8,7 +8,7 @@ import android.view.View;
 
 import com.github.fafaldo.fabtoolbar.widget.FABToolbarLayout;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity {
 
 
 
@@ -22,30 +22,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
             setSupportActionBar(toolbar);
 
-            FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-            morph = (FABToolbarLayout) findViewById(R.id.fabtoolbar);
 
-            View uno, dos, tres, cuatro;
-
-            uno = findViewById(R.id.uno);
-            dos = findViewById(R.id.dos);
-            cuatro = findViewById(R.id.cuatro);
-            tres = findViewById(R.id.tres);
-
-            fab.setOnClickListener(this);
-            uno.setOnClickListener(this);
-            dos.setOnClickListener(this);
-            tres.setOnClickListener(this);
-            cuatro.setOnClickListener(this);
-        }
-
-
-        @Override
-        public void onClick(View v) {
-            if (v.getId() == R.id.fab) {
-                morph.show();
-            }
-
-            morph.hide();
         }
     }
