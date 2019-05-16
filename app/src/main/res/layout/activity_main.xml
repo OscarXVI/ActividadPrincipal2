@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical|start"
         android:layout_margin="@dimen/fab_margin"
-        android:src="@android:drawable/ic_dialog_email"
+        android:src="@android:drawable/ic_input_add"
         app:backgroundTint="#009688"
         app:layout_anchor="@+id/contenedor_detalle_item"
         app:layout_anchorGravity="top|end" />
